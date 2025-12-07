@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS99 Value List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PS99 Value List</h1>
+
+        <div class="tabs">
+            <button class="tab active" data-tab="huges">Huges</button>
+            <button class="tab" data-tab="exclusives">Exclusives</button>
+            <button class="tab" data-tab="mythics">Mythics</button>
+            <button class="tab" data-tab="events">Events</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchBar" placeholder="Search pets..." />
+            <button class="theme-toggle" onclick="toggleTheme()">🌞 / 🌜</button>
+        </div>
+    </header>
+
+    <div class="grid" id="petGrid"></div>
+
+    <div id="petDetail" class="pet-popup">
+        <div class="pet-popup-content">
+            <span class="close-btn" onclick="closePopup()">X</span>
+            <h2 id="petDetailName"></h2>
+            <img id="petDetailImage" />
+            <p><strong>Value:</strong> <span id="petDetailValue"></span></p>
+            <p><strong>Rarity:</strong> <span id="petDetailRarity"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
